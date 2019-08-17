@@ -8,8 +8,5 @@
 - sudo docker-compose down
 
 ### URL de Acesso
-- http://localhost:8000/]
+- http://localhost:8000/
 
-### Fonte: Projeto Django
-- https://docs.docker.com/compose/django/
-- sudo docker-compose run web django-admin startproject estudoDjango .

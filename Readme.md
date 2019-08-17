@@ -1,3 +1,7 @@
+git config --global user.name "Fulano de tal"
+git config --global user.email "email@gmail.com"
+
+
 ### Subindo a API
 - sudo docker-compose up
 

@@ -1,3 +1,21 @@
+### Ambiente Docker
+* Django 2.2
+```
+cd \pydjango
+sudo docker-compose up
+sudo docker container ls
+sudo docker-compose down
+http://localhost:8000/admin
+
+``` 
+* Portainer (controle de imagens)
+- admin/controle2000
+```
+cd \portainer
+sudo docker-compose up
+http://localhost:9000/
+
+```
 ### Configurando acesso ao Git
 ```
 git init
@@ -11,15 +29,4 @@ git commit -m "issue"
 git push --set-upstream origin master
 ```
 
-### Subindo Docker com configuração DJANGO 2.2
-- sudo docker-compose up
-
-### Listando Containers
-- sudo docker container ls
-
-### Derrubando API
-- sudo docker-compose down
-
-### URL de Acesso
-- http://localhost:8000/
 

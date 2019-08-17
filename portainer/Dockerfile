@@ -1,0 +1,3 @@
+FROM portainer
+WORKDIR /
+

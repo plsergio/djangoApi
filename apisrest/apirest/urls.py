@@ -14,17 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from apirest.start import views
-from rest_framework import routers
-
-router = routers.DefaultRouter()
-router.register(r'users', views.UserViewerSet)
-router.register(r'groups', views.GroupViewerSet)
+from django.conf.urls import url
+from django.urls import re_path
+from core import views
 
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('admin/', admin.site.urls)
+    url(r'^chaves/$', views.ChaveList.as_view(),name='chave-list'),
+    url(r'^musics/$', views.MusicList.as_view(),name='music-list'),
+    url(r'^produtos/$', views.ProductList.as_view(),name='porduct-list'),
+    re_path(r'^admin/', admin.site.urls),
 ]

@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Tem certeza que vc quer deletar {{person.first_name}}?</h1>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %} 
         {{ form }}
-        <button type="submit">Salvar</button>
+        <button type="submit">Delete</button>
     </form>
 </body>
 </html>

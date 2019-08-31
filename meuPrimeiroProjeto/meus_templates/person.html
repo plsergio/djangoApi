@@ -10,7 +10,10 @@
 <body>
     <ul>
         {% for pessoa in persons %}
-            <li>{{ pessoa.first_name }}</li>
+            <li>
+                <a href="{% url 'person_update' pessoa.id %}">{{ pessoa.first_name }}</a>
+                <a href="{% url 'person_delete' pessoa.id %}">Deletar</a>
+            </li>
         {% endfor %}
     </ul>
 

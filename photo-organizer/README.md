@@ -27,6 +27,7 @@
 pyinstaller -w -F photo-organizer.py
 ```
 - Generate in dist/
+- With icone pyinstaller -w -F -i {icon location} {python file}
 
 ## Dependency
 - sudo apt install python3-venv
